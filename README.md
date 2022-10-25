@@ -4,11 +4,11 @@ https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-genera
 https://learn.microsoft.com/en-us/dotnet/api/system.text.json.serialization.jsonsourcegenerationmode?view=net-7.0
 
 ## Exepriments:
-Current Serializer/Desirializer: Newtonsoft.Json.JsonConvert => SerializeObject/DeserializeObject
-Classic Serializer/Desirializer: System.Text.Json.JsonSerializer => Serialize/Deserialize
-Generated (Default) Serializer/Desirializer: System.Text.Json.JsonSerializer => Serialize/Deserialize + JsonSourceGenerationMode = Default
-Generated Metadata Serializer/Desirializer: System.Text.Json.JsonSerializer => Serialize/Deserialize + JsonSourceGenerationMode = Metadata
-Generated Serialization Serializer/Desirializer: System.Text.Json.JsonSerializer => Serialize/Deserialize + JsonSourceGenerationMode = Serialization
+##### Current Serializer/Desirializer: Newtonsoft.Json.JsonConvert => SerializeObject/DeserializeObject
+##### Classic Serializer/Desirializer: System.Text.Json.JsonSerializer => Serialize/Deserialize
+##### Generated (Default) Serializer/Desirializer: System.Text.Json.JsonSerializer => Serialize/Deserialize + JsonSourceGenerationMode.Default
+##### Generated Metadata Serializer/Desirializer: System.Text.Json.JsonSerializer => Serialize/Deserialize + JsonSourceGenerationMode.Metadata
+##### Generated Serialization Serializer/Desirializer: System.Text.Json.JsonSerializer => Serialize/Deserialize + JsonSourceGenerationMode.Serialization
 
 ## Results:
 ### Serialization
