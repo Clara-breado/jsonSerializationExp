@@ -1,0 +1,362 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\project\exp\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\f947112d-a7ce-4e21-a817-d36b480e01e6
+// command took 2.16s and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\project\exp\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\f947112d-a7ce-4e21-a817-d36b480e01e6
+// command took 18.46s and exited with 1
+// start dotnet  build -c Release --no-restore --no-dependencies /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true in D:\project\exp\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\f947112d-a7ce-4e21-a817-d36b480e01e6
+// command took 3.76s and exited with 0
+// ***** Done, took 00:00:24 (24.52 sec)   *****
+// Found 3 benchmarks:
+//   DeserializationBenchmarks.CurrenDeserializer: DefaultJob
+//   DeserializationBenchmarks.ClassicDeSerializer: DefaultJob
+//   DeserializationBenchmarks.GeneratedDeserializer: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: DeserializationBenchmarks.CurrenDeserializer: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet f947112d-a7ce-4e21-a817-d36b480e01e6.dll --benchmarkName ConsoleApp1.DeserializationBenchmarks.CurrenDeserializer --job Default --benchmarkId 0 in D:\project\exp\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\f947112d-a7ce-4e21-a817-d36b480e01e6\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.10 (6.0.1022.47605), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 271500.00 ns, 271.5000 us/op
+WorkloadJitting  1: 1 op, 22912800.00 ns, 22.9128 ms/op
+
+OverheadJitting  2: 16 op, 544200.00 ns, 34.0125 us/op
+WorkloadJitting  2: 16 op, 15329900.00 ns, 958.1187 us/op
+
+WorkloadPilot    1: 16 op, 14701400.00 ns, 918.8375 us/op
+WorkloadPilot    2: 32 op, 28260300.00 ns, 883.1344 us/op
+WorkloadPilot    3: 64 op, 57548500.00 ns, 899.1953 us/op
+WorkloadPilot    4: 128 op, 95790900.00 ns, 748.3664 us/op
+WorkloadPilot    5: 256 op, 138769300.00 ns, 542.0676 us/op
+WorkloadPilot    6: 512 op, 286629700.00 ns, 559.8236 us/op
+WorkloadPilot    7: 1024 op, 570394500.00 ns, 557.0259 us/op
+
+OverheadWarmup   1: 1024 op, 5700.00 ns, 5.5664 ns/op
+OverheadWarmup   2: 1024 op, 5100.00 ns, 4.9805 ns/op
+OverheadWarmup   3: 1024 op, 4600.00 ns, 4.4922 ns/op
+OverheadWarmup   4: 1024 op, 4400.00 ns, 4.2969 ns/op
+OverheadWarmup   5: 1024 op, 4500.00 ns, 4.3945 ns/op
+OverheadWarmup   6: 1024 op, 4400.00 ns, 4.2969 ns/op
+OverheadWarmup   7: 1024 op, 4400.00 ns, 4.2969 ns/op
+OverheadWarmup   8: 1024 op, 4400.00 ns, 4.2969 ns/op
+
+OverheadActual   1: 1024 op, 4400.00 ns, 4.2969 ns/op
+OverheadActual   2: 1024 op, 4300.00 ns, 4.1992 ns/op
+OverheadActual   3: 1024 op, 5200.00 ns, 5.0781 ns/op
+OverheadActual   4: 1024 op, 4500.00 ns, 4.3945 ns/op
+OverheadActual   5: 1024 op, 4500.00 ns, 4.3945 ns/op
+OverheadActual   6: 1024 op, 4800.00 ns, 4.6875 ns/op
+OverheadActual   7: 1024 op, 4300.00 ns, 4.1992 ns/op
+OverheadActual   8: 1024 op, 4300.00 ns, 4.1992 ns/op
+OverheadActual   9: 1024 op, 4400.00 ns, 4.2969 ns/op
+OverheadActual  10: 1024 op, 4200.00 ns, 4.1016 ns/op
+OverheadActual  11: 1024 op, 4300.00 ns, 4.1992 ns/op
+OverheadActual  12: 1024 op, 4400.00 ns, 4.2969 ns/op
+OverheadActual  13: 1024 op, 4300.00 ns, 4.1992 ns/op
+OverheadActual  14: 1024 op, 4800.00 ns, 4.6875 ns/op
+OverheadActual  15: 1024 op, 4300.00 ns, 4.1992 ns/op
+
+WorkloadWarmup   1: 1024 op, 556843900.00 ns, 543.7929 us/op
+WorkloadWarmup   2: 1024 op, 553147300.00 ns, 540.1829 us/op
+WorkloadWarmup   3: 1024 op, 550731200.00 ns, 537.8234 us/op
+WorkloadWarmup   4: 1024 op, 540000600.00 ns, 527.3443 us/op
+WorkloadWarmup   5: 1024 op, 538484100.00 ns, 525.8634 us/op
+WorkloadWarmup   6: 1024 op, 543948600.00 ns, 531.1998 us/op
+WorkloadWarmup   7: 1024 op, 552538400.00 ns, 539.5883 us/op
+WorkloadWarmup   8: 1024 op, 557742800.00 ns, 544.6707 us/op
+WorkloadWarmup   9: 1024 op, 568315200.00 ns, 554.9953 us/op
+WorkloadWarmup  10: 1024 op, 556232100.00 ns, 543.1954 us/op
+WorkloadWarmup  11: 1024 op, 539884100.00 ns, 527.2306 us/op
+WorkloadWarmup  12: 1024 op, 549841200.00 ns, 536.9543 us/op
+WorkloadWarmup  13: 1024 op, 545729700.00 ns, 532.9392 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 1024 op, 546013600.00 ns, 533.2164 us/op
+WorkloadActual   2: 1024 op, 545901000.00 ns, 533.1064 us/op
+WorkloadActual   3: 1024 op, 552302400.00 ns, 539.3578 us/op
+WorkloadActual   4: 1024 op, 558972100.00 ns, 545.8712 us/op
+WorkloadActual   5: 1024 op, 555090200.00 ns, 542.0803 us/op
+WorkloadActual   6: 1024 op, 560408900.00 ns, 547.2743 us/op
+WorkloadActual   7: 1024 op, 561766100.00 ns, 548.5997 us/op
+WorkloadActual   8: 1024 op, 546188300.00 ns, 533.3870 us/op
+WorkloadActual   9: 1024 op, 549037200.00 ns, 536.1691 us/op
+WorkloadActual  10: 1024 op, 541344000.00 ns, 528.6562 us/op
+WorkloadActual  11: 1024 op, 542294800.00 ns, 529.5848 us/op
+WorkloadActual  12: 1024 op, 544616600.00 ns, 531.8521 us/op
+WorkloadActual  13: 1024 op, 542735200.00 ns, 530.0148 us/op
+WorkloadActual  14: 1024 op, 540251500.00 ns, 527.5894 us/op
+WorkloadActual  15: 1024 op, 552403800.00 ns, 539.4568 us/op
+
+// AfterActualRun
+WorkloadResult   1: 1024 op, 546009200.00 ns, 533.2121 us/op
+WorkloadResult   2: 1024 op, 545896600.00 ns, 533.1021 us/op
+WorkloadResult   3: 1024 op, 552298000.00 ns, 539.3535 us/op
+WorkloadResult   4: 1024 op, 558967700.00 ns, 545.8669 us/op
+WorkloadResult   5: 1024 op, 555085800.00 ns, 542.0760 us/op
+WorkloadResult   6: 1024 op, 560404500.00 ns, 547.2700 us/op
+WorkloadResult   7: 1024 op, 561761700.00 ns, 548.5954 us/op
+WorkloadResult   8: 1024 op, 546183900.00 ns, 533.3827 us/op
+WorkloadResult   9: 1024 op, 549032800.00 ns, 536.1648 us/op
+WorkloadResult  10: 1024 op, 541339600.00 ns, 528.6520 us/op
+WorkloadResult  11: 1024 op, 542290400.00 ns, 529.5805 us/op
+WorkloadResult  12: 1024 op, 544612200.00 ns, 531.8479 us/op
+WorkloadResult  13: 1024 op, 542730800.00 ns, 530.0105 us/op
+WorkloadResult  14: 1024 op, 540247100.00 ns, 527.5851 us/op
+WorkloadResult  15: 1024 op, 552399400.00 ns, 539.4525 us/op
+GC:  12 3 0 128779768 1024
+Threading:  0 0 1024
+
+// AfterAll
+// Benchmark Process 32684 has exited with code 0.
+
+Mean = 536.410 μs, StdErr = 1.803 μs (0.34%), N = 15, StdDev = 6.983 μs
+Min = 527.585 μs, Q1 = 530.929 μs, Median = 533.383 μs, Q3 = 540.764 μs, Max = 548.595 μs
+IQR = 9.835 μs, LowerFence = 516.177 μs, UpperFence = 555.517 μs
+ConfidenceInterval = [528.944 μs; 543.876 μs] (CI 99.9%), Margin = 7.466 μs (1.39% of Mean)
+Skewness = 0.44, Kurtosis = 1.67, MValue = 2
+
+// ** Remained 2 (66.7%) benchmark(s) to run. Estimated finish 2022-10-25 13:27 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: DeserializationBenchmarks.ClassicDeSerializer: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet f947112d-a7ce-4e21-a817-d36b480e01e6.dll --benchmarkName ConsoleApp1.DeserializationBenchmarks.ClassicDeSerializer --job Default --benchmarkId 1 in D:\project\exp\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\f947112d-a7ce-4e21-a817-d36b480e01e6\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.10 (6.0.1022.47605), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 240500.00 ns, 240.5000 us/op
+WorkloadJitting  1: 1 op, 16119800.00 ns, 16.1198 ms/op
+
+OverheadJitting  2: 16 op, 540100.00 ns, 33.7563 us/op
+WorkloadJitting  2: 16 op, 9434500.00 ns, 589.6562 us/op
+
+WorkloadPilot    1: 16 op, 10136200.00 ns, 633.5125 us/op
+WorkloadPilot    2: 32 op, 17271800.00 ns, 539.7437 us/op
+WorkloadPilot    3: 64 op, 34567500.00 ns, 540.1172 us/op
+WorkloadPilot    4: 128 op, 67844000.00 ns, 530.0312 us/op
+WorkloadPilot    5: 256 op, 111400400.00 ns, 435.1578 us/op
+WorkloadPilot    6: 512 op, 178629500.00 ns, 348.8857 us/op
+WorkloadPilot    7: 1024 op, 343371200.00 ns, 335.3234 us/op
+WorkloadPilot    8: 2048 op, 695658100.00 ns, 339.6768 us/op
+
+OverheadWarmup   1: 2048 op, 10400.00 ns, 5.0781 ns/op
+OverheadWarmup   2: 2048 op, 8200.00 ns, 4.0039 ns/op
+OverheadWarmup   3: 2048 op, 8000.00 ns, 3.9062 ns/op
+OverheadWarmup   4: 2048 op, 8000.00 ns, 3.9062 ns/op
+OverheadWarmup   5: 2048 op, 9300.00 ns, 4.5410 ns/op
+OverheadWarmup   6: 2048 op, 9300.00 ns, 4.5410 ns/op
+OverheadWarmup   7: 2048 op, 7900.00 ns, 3.8574 ns/op
+
+OverheadActual   1: 2048 op, 7900.00 ns, 3.8574 ns/op
+OverheadActual   2: 2048 op, 7900.00 ns, 3.8574 ns/op
+OverheadActual   3: 2048 op, 8000.00 ns, 3.9062 ns/op
+OverheadActual   4: 2048 op, 8000.00 ns, 3.9062 ns/op
+OverheadActual   5: 2048 op, 8000.00 ns, 3.9062 ns/op
+OverheadActual   6: 2048 op, 8000.00 ns, 3.9062 ns/op
+OverheadActual   7: 2048 op, 7600.00 ns, 3.7109 ns/op
+OverheadActual   8: 2048 op, 7900.00 ns, 3.8574 ns/op
+OverheadActual   9: 2048 op, 7900.00 ns, 3.8574 ns/op
+OverheadActual  10: 2048 op, 7900.00 ns, 3.8574 ns/op
+OverheadActual  11: 2048 op, 7900.00 ns, 3.8574 ns/op
+OverheadActual  12: 2048 op, 7900.00 ns, 3.8574 ns/op
+OverheadActual  13: 2048 op, 7900.00 ns, 3.8574 ns/op
+OverheadActual  14: 2048 op, 7600.00 ns, 3.7109 ns/op
+OverheadActual  15: 2048 op, 7800.00 ns, 3.8086 ns/op
+
+WorkloadWarmup   1: 2048 op, 692560900.00 ns, 338.1645 us/op
+WorkloadWarmup   2: 2048 op, 684249500.00 ns, 334.1062 us/op
+WorkloadWarmup   3: 2048 op, 685040900.00 ns, 334.4926 us/op
+WorkloadWarmup   4: 2048 op, 694945000.00 ns, 339.3286 us/op
+WorkloadWarmup   5: 2048 op, 701433400.00 ns, 342.4968 us/op
+WorkloadWarmup   6: 2048 op, 714427500.00 ns, 348.8416 us/op
+WorkloadWarmup   7: 2048 op, 689030100.00 ns, 336.4405 us/op
+WorkloadWarmup   8: 2048 op, 706343100.00 ns, 344.8941 us/op
+WorkloadWarmup   9: 2048 op, 699733300.00 ns, 341.6667 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 696198600.00 ns, 339.9407 us/op
+WorkloadActual   2: 2048 op, 692165000.00 ns, 337.9712 us/op
+WorkloadActual   3: 2048 op, 727026400.00 ns, 354.9934 us/op
+WorkloadActual   4: 2048 op, 720956300.00 ns, 352.0294 us/op
+WorkloadActual   5: 2048 op, 717673200.00 ns, 350.4264 us/op
+WorkloadActual   6: 2048 op, 686286700.00 ns, 335.1009 us/op
+WorkloadActual   7: 2048 op, 690895000.00 ns, 337.3511 us/op
+WorkloadActual   8: 2048 op, 688632500.00 ns, 336.2463 us/op
+WorkloadActual   9: 2048 op, 688427100.00 ns, 336.1460 us/op
+WorkloadActual  10: 2048 op, 694648500.00 ns, 339.1838 us/op
+WorkloadActual  11: 2048 op, 688019600.00 ns, 335.9471 us/op
+WorkloadActual  12: 2048 op, 696488600.00 ns, 340.0823 us/op
+WorkloadActual  13: 2048 op, 716806600.00 ns, 350.0032 us/op
+WorkloadActual  14: 2048 op, 690968000.00 ns, 337.3867 us/op
+WorkloadActual  15: 2048 op, 694055900.00 ns, 338.8945 us/op
+WorkloadActual  16: 2048 op, 693239400.00 ns, 338.4958 us/op
+
+// AfterActualRun
+WorkloadResult   1: 2048 op, 696190700.00 ns, 339.9369 us/op
+WorkloadResult   2: 2048 op, 692157100.00 ns, 337.9673 us/op
+WorkloadResult   3: 2048 op, 717665300.00 ns, 350.4225 us/op
+WorkloadResult   4: 2048 op, 686278800.00 ns, 335.0971 us/op
+WorkloadResult   5: 2048 op, 690887100.00 ns, 337.3472 us/op
+WorkloadResult   6: 2048 op, 688624600.00 ns, 336.2425 us/op
+WorkloadResult   7: 2048 op, 688419200.00 ns, 336.1422 us/op
+WorkloadResult   8: 2048 op, 694640600.00 ns, 339.1800 us/op
+WorkloadResult   9: 2048 op, 688011700.00 ns, 335.9432 us/op
+WorkloadResult  10: 2048 op, 696480700.00 ns, 340.0785 us/op
+WorkloadResult  11: 2048 op, 716798700.00 ns, 349.9994 us/op
+WorkloadResult  12: 2048 op, 690960100.00 ns, 337.3829 us/op
+WorkloadResult  13: 2048 op, 694048000.00 ns, 338.8906 us/op
+WorkloadResult  14: 2048 op, 693231500.00 ns, 338.4919 us/op
+GC:  25 8 0 252789608 2048
+Threading:  0 0 2048
+
+// AfterAll
+// Benchmark Process 54840 has exited with code 0.
+
+Mean = 339.509 μs, StdErr = 1.277 μs (0.38%), N = 14, StdDev = 4.779 μs
+Min = 335.097 μs, Q1 = 336.519 μs, Median = 338.230 μs, Q3 = 339.748 μs, Max = 350.423 μs
+IQR = 3.229 μs, LowerFence = 331.675 μs, UpperFence = 344.591 μs
+ConfidenceInterval = [334.117 μs; 344.900 μs] (CI 99.9%), Margin = 5.391 μs (1.59% of Mean)
+Skewness = 1.46, Kurtosis = 3.71, MValue = 2
+
+// ** Remained 1 (33.3%) benchmark(s) to run. Estimated finish 2022-10-25 13:27 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: DeserializationBenchmarks.GeneratedDeserializer: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet f947112d-a7ce-4e21-a817-d36b480e01e6.dll --benchmarkName ConsoleApp1.DeserializationBenchmarks.GeneratedDeserializer --job Default --benchmarkId 2 in D:\project\exp\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\f947112d-a7ce-4e21-a817-d36b480e01e6\bin\Release\net6.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET 6.0.10 (6.0.1022.47605), X64 RyuJIT AVX2
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX2,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 254000.00 ns, 254.0000 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidOperationException: Metadata for type 'ConsoleApp1.Person' was not provided to the serializer. The serializer method used does not support reflection-based creation of serialization-related type metadata. If using source generation, ensure that all root types passed to the serializer have been indicated with 'JsonSerializableAttribute', along with any types that might be serialized polymorphically.
+   at System.Text.Json.ThrowHelper.ThrowInvalidOperationException_NoMetadataForType(Type type)
+   at System.Text.Json.JsonSerializer.GetTypeInfo(JsonSerializerContext context, Type type)
+   at System.Text.Json.JsonSerializer.Deserialize(String json, Type returnType, JsonSerializerContext context)
+   at ConsoleApp1.DeserializationBenchmarks.GeneratedDeserializer() in D:\project\exp\ConsoleApp1\ConsoleApp1\DeserializationBenchmark.cs:line 63
+   at BenchmarkDotNet.Autogenerated.Runnable_2.WorkloadActionNoUnroll(Int64 invokeCount) in D:\project\exp\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\f947112d-a7ce-4e21-a817-d36b480e01e6\f947112d-a7ce-4e21-a817-d36b480e01e6.notcs:line 730
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_2.Run(IHost host, String benchmarkName) in D:\project\exp\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\f947112d-a7ce-4e21-a817-d36b480e01e6\f947112d-a7ce-4e21-a817-d36b480e01e6.notcs:line 585
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in D:\project\exp\ConsoleApp1\ConsoleApp1\bin\Release\net6.0\f947112d-a7ce-4e21-a817-d36b480e01e6\f947112d-a7ce-4e21-a817-d36b480e01e6.notcs:line 58
+// AfterAll
+No Workload Results were obtained from the run.
+// Benchmark Process 47600 has exited with code -1.
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2022-10-25 13:27 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8759706d-706b-4c22-b2ec-f91e1ef6ed38 FriendlyName: HP Optimized (recommended))
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\ConsoleApp1.DeserializationBenchmarks-report.csv
+  BenchmarkDotNet.Artifacts\results\ConsoleApp1.DeserializationBenchmarks-report-github.md
+  BenchmarkDotNet.Artifacts\results\ConsoleApp1.DeserializationBenchmarks-report.html
+
+// * Detailed results *
+DeserializationBenchmarks.CurrenDeserializer: DefaultJob
+Runtime = .NET 6.0.10 (6.0.1022.47605), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 536.410 μs, StdErr = 1.803 μs (0.34%), N = 15, StdDev = 6.983 μs
+Min = 527.585 μs, Q1 = 530.929 μs, Median = 533.383 μs, Q3 = 540.764 μs, Max = 548.595 μs
+IQR = 9.835 μs, LowerFence = 516.177 μs, UpperFence = 555.517 μs
+ConfidenceInterval = [528.944 μs; 543.876 μs] (CI 99.9%), Margin = 7.466 μs (1.39% of Mean)
+Skewness = 0.44, Kurtosis = 1.67, MValue = 2
+-------------------- Histogram --------------------
+[525.179 μs ; 552.312 μs) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+DeserializationBenchmarks.ClassicDeSerializer: DefaultJob
+Runtime = .NET 6.0.10 (6.0.1022.47605), X64 RyuJIT AVX2; GC = Concurrent Workstation
+Mean = 339.509 μs, StdErr = 1.277 μs (0.38%), N = 14, StdDev = 4.779 μs
+Min = 335.097 μs, Q1 = 336.519 μs, Median = 338.230 μs, Q3 = 339.748 μs, Max = 350.423 μs
+IQR = 3.229 μs, LowerFence = 331.675 μs, UpperFence = 344.591 μs
+ConfidenceInterval = [334.117 μs; 344.900 μs] (CI 99.9%), Margin = 5.391 μs (1.59% of Mean)
+Skewness = 1.46, Kurtosis = 3.71, MValue = 2
+-------------------- Histogram --------------------
+[334.212 μs ; 353.025 μs) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+DeserializationBenchmarks.GeneratedDeserializer: DefaultJob
+Runtime = .NET 6.0.10 (6.0.1022.47605), X64 RyuJIT AVX2; GC = Concurrent Workstation
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.13.2, OS=Windows 11 (10.0.22621.674)
+Intel Core i9-10900X CPU 3.70GHz, 1 CPU, 20 logical and 10 physical cores
+.NET SDK=6.0.402
+  [Host]     : .NET 6.0.10 (6.0.1022.47605), X64 RyuJIT AVX2
+  DefaultJob : .NET 6.0.10 (6.0.1022.47605), X64 RyuJIT AVX2
+
+Categories=String  
+
+|                Method |     Mean |   Error |  StdDev | Ratio | RatioSD |    Gen0 |   Gen1 | Allocated | Alloc Ratio |
+|---------------------- |---------:|--------:|--------:|------:|--------:|--------:|-------:|----------:|------------:|
+|    CurrenDeserializer | 536.4 μs | 7.47 μs | 6.98 μs |  1.00 |    0.00 | 11.7188 | 2.9297 |  125761 B |        1.00 |
+|   ClassicDeSerializer | 339.5 μs | 5.39 μs | 4.78 μs |  0.63 |    0.01 | 12.2070 | 3.9063 |  123432 B |        0.98 |
+| GeneratedDeserializer |       NA |      NA |      NA |     ? |       ? |       - |      - |         - |           ? |
+
+Benchmarks with issues:
+  DeserializationBenchmarks.GeneratedDeserializer: DefaultJob
+
+// * Warnings *
+Environment
+  Summary -> Detected error exit code from one of the benchmarks. It might be caused by following antivirus software:
+        - Windows Defender (windowsdefender://)
+Use InProcessEmitToolchain or InProcessNoEmitToolchain to avoid new process creation.
+
+BaselineCustomAnalyzer
+  Summary -> A question mark '?' symbol indicates that it was not possible to compute the (Ratio, RatioSD, Alloc Ratio) column(s) because the baseline value is too close to zero.
+
+// * Hints *
+Outliers
+  DeserializationBenchmarks.ClassicDeSerializer: Default -> 2 outliers were removed (352.03 μs, 354.99 μs)
+
+// * Legends *
+  Mean        : Arithmetic mean of all measurements
+  Error       : Half of 99.9% confidence interval
+  StdDev      : Standard deviation of all measurements
+  Ratio       : Mean of the ratio distribution ([Current]/[Baseline])
+  RatioSD     : Standard deviation of the ratio distribution ([Current]/[Baseline])
+  Gen0        : GC Generation 0 collects per 1000 operations
+  Gen1        : GC Generation 1 collects per 1000 operations
+  Allocated   : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  Alloc Ratio : Allocated memory ratio distribution ([Current]/[Baseline])
+  1 μs        : 1 Microsecond (0.000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:39 (39.31 sec), executed benchmarks: 3
+
+Global total time: 00:01:04 (64.67 sec), executed benchmarks: 3
+// * Artifacts cleanup *
